@@ -14,9 +14,7 @@ Run `echo php_uname($mode)` and `echo OS_RELATED_CONSTANTS` in different operati
 | echo DIRECTORY_SEPARATOR | \ | \ | / | / | / | / | / | / |
 | echo PATH_SEPARATOR | ; | ; | : | : | : | : | : | : |
 | echo php_uname('s') | Windows NT | Windows NT | Linux | Linux | Linux | Darwin | Darwin | Darwin |
-| echo php_uname('n') | fv-az206-635 | fv-az478-741 | fv-az573-514
- | fv-az127-355
- | fv-az266-272 | Mac-1662034000522.local | Mac-1662034129560.local | Mac-1662036874833.local |
+| echo php_uname('n') | fv-az206-635 | fv-az478-741 | fv-az573-514 | fv-az127-355 | fv-az266-272 | Mac-1662034000522.local | Mac-1662034129560.local | Mac-1662036874833.local |
 | echo php_uname('r') | 10.0 | 10.0 | 5.15.0-1017-azure | 5.15.0-1017-azure | 5.4.0-1086-azure | 21.6.0 | 20.6.0 | 19.6.0 |
 | echo php_uname('v') | build 20348 (Windows Server 2016) | build 17763 (Windows Server 2016) | #20-Ubuntu SMP Fri Aug 5 12:00:24 UTC 2022 | #20~20.04.1-Ubuntu SMP Fri Aug 5 12:16:53 UTC 2022 | #91~18.04.1-Ubuntu SMP Thu Jun 23 20:33:05 UTC 2022 | Darwin Kernel Version 21.6.0: Wed Aug 10 14:25:27 PDT 2022; root:xnu-8020.141.5~2/RELEASE_X86_64 | Darwin Kernel Version 20.6.0: Tue Jun 21 20:50:28 PDT 2022; root:xnu-7195.141.32~1/RELEASE_X86_64 | Darwin Kernel Version 19.6.0: Tue Jun 21 21:18:39 PDT 2022; root:xnu-6153.141.66~1/RELEASE_X86_64 |
 | echo php_uname('m') | AMD64 | AMD64 | x86_64 | x86_64 | x86_64 | x86_64 | x86_64 | x86_64 |
