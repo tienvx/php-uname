@@ -1,0 +1,46 @@
+name: PHP Commands
+
+on: [push]
+
+jobs:
+  run:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: ['windows-2022', 'windows-2019', 'ubuntu-22.04', 'ubuntu-20.04', 'ubuntu-18.04', 'macos-12', 'macos-11', 'macos-10.15']
+        php-versions: ['7.4', '8.0', '8.1']
+    steps:
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+
+      - name: Echo PHP_OS
+        run: php -r "echo PHP_OS;"
+
+      - name: Echo PHP_OS_FAMILY
+        run: php -r "echo PHP_OS_FAMILY;"
+
+      - name: Echo PHP_SHLIB_SUFFIX
+        run: php -r "echo PHP_SHLIB_SUFFIX;"
+
+      - name: Echo DIRECTORY_SEPARATOR
+        run: php -r "echo DIRECTORY_SEPARATOR;"
+
+      - name: Echo PATH_SEPARATOR
+        run: php -r "echo PATH_SEPARATOR;"
+
+      - name: Echo php_uname('s')
+        run: php -r "echo php_uname('s');"
+
+      - name: Echo php_uname('n')
+        run: php -r "echo php_uname('n');"
+
+      - name: Echo php_uname('r')
+        run: php -r "echo php_uname('r');"
+
+      - name: Echo php_uname('v')
+        run: php -r "echo php_uname('v');"
+
+      - name: Echo php_uname('m')
+        run: php -r "echo php_uname('m');"
