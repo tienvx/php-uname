@@ -24,6 +24,12 @@ jobs:
       - name: Echo PHP_SHLIB_SUFFIX
         run: php -r "echo PHP_SHLIB_SUFFIX;"
 
+      - name: Echo DIRECTORY_SEPARATOR
+        run: php -r "echo DIRECTORY_SEPARATOR;"
+
+      - name: Echo PATH_SEPARATOR
+        run: php -r "echo PATH_SEPARATOR;"
+
       - name: Echo php_uname('s')
         run: php -r "echo php_uname('s');"
 
